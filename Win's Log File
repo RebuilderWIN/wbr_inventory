@@ -5,3 +5,13 @@ the items I expected to do next.
 10/31/2013
 I have created a new project called "wbrinventory". I have CD'd
 into the directory and have opened Sublime 2.
+
+Then I deleted the first generate becuase I had included Tests from Rails.
+I wanted to use Rspec. So I started over.
+I changed the config file to generate the secure_token as Hartl says.
+Then I configured respec
+
+Then I pushed everything I have done to git. And then to GitHub. Then
+I decided push up to Heroku. Because I have more than 5 apps they want a credit card. 
+I sent a support request asking how to delete unused apps? Waiting 
+answer.

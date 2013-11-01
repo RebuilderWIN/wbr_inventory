@@ -1,4 +1,7 @@
 WbrInventory::Application.routes.draw do
+  get "inventory_enter/display"
+  get "inventory_enter/edit"
+  get "inventory_enter/lookup"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
