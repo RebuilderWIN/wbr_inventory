@@ -15,3 +15,16 @@ Then I pushed everything I have done to git. And then to GitHub. Then
 I decided push up to Heroku. Because I have more than 5 apps they want a credit card. 
 I sent a support request asking how to delete unused apps? Waiting 
 answer.
+Heroku answered telling me how to delete the un-used apps. I deleted most of them.
+And then I asked about how I enter a Credit Card. Waiting for an answer.
+
+11/1/2013
+I am struggling with the problem of whether to create a new Welcom controller as the place to key off to all the other apps. It seems that
+this would be a good thing to do. Then I can have Inventory, Payroll, Invoices, etc.
+I am currently working on Inventory. 
+I think I DONOT want to creat a WELCOME. That will come later! I want to develope the INVENTORY first.
+I am at 3.2 Our firt tests. Since this is where I am lacking I will spend 
+more time here.
+I am stopping today @3.2.1
+
+11/2/2013 Worked my way through Rspec testing. I have a better understanding and have gotten Passes on everything up to Section 3.3.3
