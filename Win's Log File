@@ -32,3 +32,27 @@ I am stopping today @3.2.1
 11/3/2013 Finished up to 3.4 Conclusion. Everything worked fine.
 I commnitted all the work I had done and merged 'Static-pages' into
 'master' branch. Next I need to do 3.5 and do the exercises.
+
+11/11/2013 I am finally back to my app. I will have to adapt Hartl's sample app to mine. I just need to slowly be sure that I understand what he is doing so that I can do what I want to do. 
+I want to simplify since what I am doing instead of making a home page I simply need to add all the links so that I can go from page to page. After I get the pages built I will modify how I do it.
+
+CUT THIS FROM (display.html.erb) and replace it with what is in listing 5.2
+<% provide(:title, "Display") %>
+
+<h1>WBR Inventory</h1>
+<p>
+  This is the display page for the Inventory of
+  Win Brisbin Rebuilder
+</p>
+
+I did this because Hartl w/o explanation of what he was doing changed what I had to what is currently in there. It has a dramatic effect on the Web Brower display.
+
+11/17/2013
+I need to start at Section 5.1.2 Bootstrap and Custom CSS. 
+I will need to go slow and be sure that I grasp what Hartl is doing!
+
+11/28/2013 I have been working on understanding CSS. I think I have some understanding. Now Hartl is going in to SCSS. I don't have to use it but I have to decide if I want to learn how to use SCSS.
+BOOTSTRAP uses SCSS and I want to use BOOTSTRAP. So I suppose I need to understand the application of SCSS. I AM CURRENTLY IN SECTION 5.2.1 asset pipeline. 
+I have read the material but I need to carefully go through the Rest of Chapter 5.
+
+11/29/2013 I am now at 5.3 Layout Links
