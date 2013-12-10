@@ -1,7 +1,7 @@
 WbrInventory::Application.routes.draw do
-  get "inventory_enter/display"
-  get "inventory_enter/edit"
-  get "inventory_enter/lookup"
+  match '/display', to: 'inventory_enter#display', via: 'get'
+  match '/lookup',  to: 'inventory_enter#lookup',  via: 'get'
+  match '/edit',    to: 'inventory_enter#edit',    via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
