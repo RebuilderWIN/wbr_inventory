@@ -56,3 +56,6 @@ BOOTSTRAP uses SCSS and I want to use BOOTSTRAP. So I suppose I need to understa
 I have read the material but I need to carefully go through the Rest of Chapter 5.
 
 11/29/2013 I am now at 5.3 Layout Links
+
+12/10/2013 I have finished with routes for Display, Lookup, and Edit in WBRInventory.
+I am now going to going to create the Customer(Users) controller and create the def the new customer(user). I am tempted to use Users instead of Customers to make the entry simpler. But I am not going to do that.

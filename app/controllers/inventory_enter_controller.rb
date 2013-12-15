@@ -1,4 +1,8 @@
 class InventoryEnterController < ApplicationController
+  
+  def home
+  end
+
   def display
   end
 
