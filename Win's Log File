@@ -51,6 +51,9 @@ I did this because Hartl w/o explanation of what he was doing changed what I had
 I need to start at Section 5.1.2 Bootstrap and Custom CSS. 
 I will need to go slow and be sure that I grasp what Hartl is doing!
 
+
+
+
 11/28/2013 I have been working on understanding CSS. I think I have some understanding. Now Hartl is going in to SCSS. I don't have to use it but I have to decide if I want to learn how to use SCSS.
 BOOTSTRAP uses SCSS and I want to use BOOTSTRAP. So I suppose I need to understand the application of SCSS. I AM CURRENTLY IN SECTION 5.2.1 asset pipeline. 
 I have read the material but I need to carefully go through the Rest of Chapter 5.
@@ -59,3 +62,9 @@ I have read the material but I need to carefully go through the Rest of Chapter 
 
 12/10/2013 I have finished with routes for Display, Lookup, and Edit in WBRInventory.
 I am now going to going to create the Customer(Users) controller and create the def the new customer(user). I am tempted to use Users instead of Customers to make the entry simpler. But I am not going to do that.
+
+12/15/2013 I finished the coding for Chapter Five. I didnot change all the Rspec files.
+The Rspec tests using Capybara seem very useful. 
+Fortunately before I moved to Chapter 6 I ran the Rspec tests and found that they had failed. I learned a lot about the usefulness of Rspec.
+Now in Chapter Six I will move into modeling the data for the improtant things that I need to do. The first thing that Hartl starts with in Authentication Systems. I don't believe that I need a complex Authenicator for my situation wince we will be a private system.
+
