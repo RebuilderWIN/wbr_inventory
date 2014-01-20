@@ -1,4 +1,5 @@
 WbrInventory::Application.routes.draw do
+  resources :customers
   root  'inventory_enter#home'
   match '/signup',  to: 'customers#new',           via: 'get'
   match '/display', to: 'inventory_enter#display', via: 'get'

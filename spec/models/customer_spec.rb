@@ -3,13 +3,21 @@ require 'spec_helper'
 describe Customer do
 
 	before do
-		@customer = Customer.new(name: "Example Customer", email: "customer@example.com")
+		@customer = Customer.new(name: "Example Customer", email: "customer@example.com",
+			                       password: "foobar", password_confirmation: "foobar")
 	end
 
 	subject { @customer }
 
 	it { should respond_to(:name)}
 	it { should respond_to(:email)}
+	it { should respond_to(:password_digest)}
+	it { should respond_to(:password)}
+	it { should respond_to(:password_confirmation)}
+	it { should respond_to(:name)}
+	it { should respond_to(:authenticate)}
+	
+
 
 	it { should be_valid }
 
@@ -60,4 +68,40 @@ describe Customer do
 	  it {should_not be_valid }
   end
 
+  describe "when password is not present" do
+    before do
+      @customer = Customer.new(name: "Example customer", email: "customer@example.com",
+                       password: " ", password_confirmation: " ")
+    end
+    it { should_not be_valid }
+  end
+
+  describe "when password doesn't match confirmation" do
+    before { @customer.password_confirmation = "mismatch" }
+    it { should_not be_valid }
+  end
+
+	describe "with a password that's too short" do
+    before { @customer.password = @customer.password_confirmation = "a"* 5 }
+    it { should be_invalid }
+  end
+
+  describe "return value of authenticate method" do
+    before { @customer.save }
+    let(:found_customer) { Customer.find_by(email: @customer.email) }
+
+    describe "with valid password" do
+      it { should eq found_customer.authenticate(@customer.password) }
+    end
+
+    describe "with invalid password" do
+      let(:customer_for_invalid_password) { found_customer.authenticate("invalid") }
+
+      it { should_not eq customer_for_invalid_password }
+      specify { expect(customer_for_invalid_password).to be_false }
+    end
+  end  
+
 end
+
+
